@@ -3,6 +3,8 @@
 import os,platform,time,base64
 if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
 	os.system('pkg update && pkg install nodejs -y')
+if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
+	os.system('pkg update && pkg install wget -y')
 bit=platform.architecture()[0]
 if not os.path.isfile('binni.so'):
 	os.system('wget https://raw.githubusercontent.com/Binyamin-binni/Binaries/main/bxi/for-termux/{}/binni.so'.format(bit))
