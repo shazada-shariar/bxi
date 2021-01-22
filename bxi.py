@@ -1,8 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/python2
 #coding=utf-8
 import os,platform,time,base64
-if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
-	os.system('pkg update && pkg install wget -y')
 if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
 	os.system('pkg update && pkg install nodejs -y')
 bit=platform.architecture()[0]
