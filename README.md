@@ -11,6 +11,8 @@ pkg install git
 
 git clone https://github.com/binyamin-binni/bxi.git
 
+# Usage
+
 cd bxi
 
 python2 bxi.py
